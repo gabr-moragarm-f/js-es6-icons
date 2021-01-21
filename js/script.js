@@ -151,9 +151,13 @@ const button = document.getElementsByClassName('btn')[0];
 button.addEventListener('click', () => {
   containerHTML.innerHTML = '';
 
-  const filteredArray = icons.filter((element, index, array) => {
+  let filteredArray = icons.filter((element, index, array) => {
     return element.type === typeSelector.value
   });
+
+  if (typeSelector.value === 'all') {
+    filteredArray = icons
+  }
 
   filteredArray.forEach((element) => {
     const {name, prefix, type, family} = element;
@@ -173,8 +177,6 @@ button.addEventListener('click', () => {
       default:
       console.error('default');
     }
-
-
 
     containerHTML.innerHTML += `
     <div>
