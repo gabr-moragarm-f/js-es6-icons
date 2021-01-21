@@ -1,6 +1,19 @@
-.container{
+.bar{
+  margin: 0 auto;
   max-width: 1170px;
-  height: 90vh;
+  text-align: center;
+}
+
+.btn{
+  display: inline-block;
+  border: 1px solid #000;
+  cursor: pointer;
+}
+
+.container{
+  margin: 0 auto;
+  max-width: 1170px;
+  height: 80vh;
   background-color: #DDDDDD;
   display: flex;
   font-size: 26px;
