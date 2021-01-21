@@ -1,0 +1,16 @@
+.container{
+  max-width: 1170px;
+  height: 90vh;
+  background-color: #DDDDDD;
+  display: flex;
+  font-size: 26px;
+  justify-content: space-around;
+  align-content: space-around;
+  flex-wrap: wrap;
+}
+
+.container > div{
+  width: 18%;
+  border: 1px solid #000;
+  text-align: center;
+}
